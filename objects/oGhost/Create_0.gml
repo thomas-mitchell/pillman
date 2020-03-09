@@ -1,10 +1,9 @@
-/// @description Insert description here
+ /// @description Insert description here
 // You can write your code in this editor
 
 
 
 speed = 1;
-//velocity = 1;
 dir = "up";
 name = "";
 

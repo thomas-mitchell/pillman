@@ -7,7 +7,8 @@ name = "shadow";
 
 scatterNode = map[0, 20];
 
-var targetNode = get_ghost_target_node(self);
-path_add_point(path, targetNode.x, targetNode.y, 100);
-path_start(path, 100, path_action_stop, true);
+var nextNode = get_ghost_next_node(self);
+path_add_point(path, x, y, 100);
+path_add_point(path, nextNode.x, nextNode.y, 100);
+path_start(path, 1, path_action_stop, true);
 
