@@ -5,9 +5,11 @@ var targetNode = get_ghost_target_node(ghost);
 
 var nodeList = ds_list_create();
 
+
+
+// Work out the nodes next to the actor
 var upNode = map[currentNode.gridX, currentNode.gridY - 1];
 var downNode = map[currentNode.gridX, currentNode.gridY + 1];
-
 var leftNode = noone;
 if (currentNode.gridX != 0) {
 	leftNode = map[currentNode.gridX - 1, currentNode.gridY];

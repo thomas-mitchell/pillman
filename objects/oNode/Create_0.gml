@@ -7,3 +7,5 @@ passable = true;
 
 gridX = 0;
 gridY = 0;
+
+color = c_white;

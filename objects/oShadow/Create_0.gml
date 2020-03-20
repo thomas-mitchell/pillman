@@ -4,11 +4,10 @@
 event_inherited();
 
 name = "shadow";
+dir = "left";
 
-scatterNode = map[0, 20];
+scatterNode = map[1, 26];
+scatterNode.color = c_green;
 
-var nextNode = get_ghost_next_node(self);
-path_add_point(path, x, y, 100);
-path_add_point(path, nextNode.x, nextNode.y, 100);
-path_start(path, 1, path_action_stop, true);
+alarm[0] = 5;
 
