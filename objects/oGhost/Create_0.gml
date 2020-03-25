@@ -7,6 +7,7 @@ velocity = 1;
 dir = "up";
 name = "";
 
+color = c_white;
 state = "scatter";
 scatterNode = noone;
 nextNode = noone;

@@ -5,6 +5,7 @@ global.GRID_SIZE = 8;
 globalvar map;
 
 state = "initialising";
+ghostState = "scatter";
 
 //instance_create_layer(x, y, "EffectsLayer", oFadeIn);
 
