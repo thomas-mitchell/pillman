@@ -19,30 +19,20 @@ if (ghost.state == "chase") {
 		var targetGridX = pillmanNode.gridX;
 		if (pillmanDirection == "left") {
 			targetGridX -= 4;
-			if(targetGridX < 0) {
-				targetGridX = 0;	
-			}
 		}
 		if (pillmanDirection == "right") {
 			targetGridX += 4;
-			if(targetGridX >= oGame.mapWidth) {
-				targetGridX = oGame.mapWidth - 1;	
-			}
 		}
+		targetGridX = clamp(targetGridX, 0, oGame.mapWidth - 1);
 		
 		var targetGridY = pillmanNode.gridY;
 		if (pillmanDirection == "up") {
 			targetGridY -= 4;
-			if(targetGridY < 0) {
-				targetGridY = 0;	
-			}
 		}
 		if (pillmanDirection == "down") {
 			targetGridY += 4;
-			if(targetGridY >= oGame.mapHeight) {
-				targetGridY = oGame.mapHeight - 1;	
-			}
 		}
+		targetGridY = clamp(targetGridY, 0, oGame.mapHeight - 1);
 		
 		//map[targetGridX, targetGridY].color = c_red;
 		return map[targetGridX, targetGridY];
@@ -66,6 +56,38 @@ if (ghost.state == "chase") {
 	}
 	
 	if (ghost.name == "bashful") {
-		return ghost.scatterNode;	
-	}
+		var pillmanNode = get_actor_node(oPillman);
+		var pillmanDirection = oPillman.dir;
+		
+		var intermediateGridX = pillmanNode.gridX;
+		if (pillmanDirection == "left") {
+			intermediateGridX -= 2;
+		}
+		if (pillmanDirection == "right") {
+			intermediateGridX += 2;
+		}
+		intermediateGridX = clamp(intermediateGridX, 0, oGame.mapWidth - 1);
+		
+		var intermediateGridY = pillmanNode.gridY;
+		if (pillmanDirection == "up") {
+			intermediateGridY -= 2;
+		}
+		if (pillmanDirection == "down") {
+			intermediateGridY += 2;
+		}
+		intermediateGridY = clamp(intermediateGridY, 0, oGame.mapHeight - 1);
+		
+		var intermediateNode = map[intermediateGridX, intermediateGridY];
+		
+		var addDirection = point_direction(oShadow.x + 4, oShadow.y + 4, intermediateNode.x + 4, intermediateNode.y + 4);
+		var addDistance = point_distance(oShadow.x + 4, oShadow.y + 4, intermediateNode.x + 4, intermediateNode.y + 4);
+	
+		var targetPositionX = intermediateNode.x + 4 + lengthdir_x(addDistance, addDirection);
+		targetPositionX = clamp(targetPositionX, 0, room_width - 1);
+		
+		var targetPositionY = intermediateNode.y + 4 + lengthdir_y(addDistance, addDirection);
+		targetPositionY = clamp(targetPositionY, 0, room_height - 1);
+		
+		return collision_point(targetPositionX, targetPositionY, oNode, true, true);
+	} // End bashful
 }
