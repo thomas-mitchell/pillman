@@ -3,12 +3,6 @@ var ghost = argument0;
 
 
 if (ghost.state == "scatter") {
-	// Debug code
-	if (ghost.name == "speedy") {
-		clear_nodes();
-		ghost.scatterNode.color = c_red;
-	}
-	
 	return ghost.scatterNode;
 }
 
