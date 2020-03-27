@@ -3,10 +3,10 @@
 
 event_inherited();
 
-name = "speedy";
-dir = "up";
+name = "pokey";
+dir = "left";
 
-scatterNode = map[1, 0];
+scatterNode = map[1, 26];
 
 alarm[0] = 5;
 

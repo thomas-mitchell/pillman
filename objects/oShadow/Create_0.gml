@@ -6,7 +6,7 @@ event_inherited();
 name = "shadow";
 dir = "left";
 
-scatterNode = map[1, 26];
+scatterNode = map[oGame.mapWidth - 2, 0];
 
 alarm[0] = 5;
 

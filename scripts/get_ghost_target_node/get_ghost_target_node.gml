@@ -10,6 +10,7 @@ if (ghost.state == "chase") {
 	if (ghost.name == "shadow") {
 		return get_actor_node(oPillman);	
 	}
+	
 	if (ghost.name == "speedy") {
 		//clear_nodes();
 		var pillmanNode = get_actor_node(oPillman);
@@ -46,4 +47,21 @@ if (ghost.state == "chase") {
 		//map[targetGridX, targetGridY].color = c_red;
 		return map[targetGridX, targetGridY];
 	} // End Speedy
+	
+	if (ghost.name == "pokey") {
+		var pokeyNode = get_actor_node(ghost);
+		var pillmanNode = get_actor_node(oPillman);
+		
+		var cutoffDistance = 8 * 8; // 8 tiles, 8 pixels per tile
+		var horzDistance = abs(pokeyNode.x - pillmanNode.x);
+		var vertDistance = abs(pokeyNode.y - pillmanNode.y);
+		var distance = sqrt( power(horzDistance, 2) + power(vertDistance, 2) );
+		
+		if (distance > cutoffDistance) {
+			return pillmanNode;
+		}
+		else {
+			return ghost.scatterNode;	
+		}
+	}
 }
