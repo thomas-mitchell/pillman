@@ -61,7 +61,11 @@ if (ghost.state == "chase") {
 			return pillmanNode;
 		}
 		else {
-			return ghost.scatterNode;	
+			return ghost.scatterNode;
 		}
+	}
+	
+	if (ghost.name == "bashful") {
+		return ghost.scatterNode;	
 	}
 }

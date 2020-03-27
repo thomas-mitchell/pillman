@@ -11,6 +11,7 @@ color = c_white;
 state = "scatter";
 scatterNode = noone;
 nextNode = noone;
+spriteMap = noone;
 
 //path = ds_list_create();
 path = path_add();

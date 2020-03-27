@@ -32,6 +32,10 @@ else if(currentNode.gridY < nextNode.gridY) {
 	dir = "down";	
 }
 
+if (spriteMap) {
+	sprite_index = ds_map_find_value(spriteMap, dir);	
+}
+
 path_clear_points(path);
 path_add_point(path, x, y, 100);
 path_add_point(path, nextNode.x, nextNode.y, 100);

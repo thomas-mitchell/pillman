@@ -20,8 +20,6 @@ if (currentNode.gridX != oGame.mapWidth - 1) {
 }
 // TODO - left and right node can only be noone if we're in the tunnel
 
-// TODO - Update dir
-
 if (ghost.dir != "down" && (upNode.passable || upNode == oGame.cageEntrance)) {
 	ds_list_add(nodeList, upNode);	
 }

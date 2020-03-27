@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "0aea4167-166b-4b70-9964-87a3cdb4c065",
+            "Value": {
+                "id": "442dac83-5152-4339-bbf2-50ee63e334f8",
+                "resourcePath": "views\\0aea4167-166b-4b70-9964-87a3cdb4c065.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1811e350-553a-4bfe-a328-b6d00ccee25d",
             "Value": {
                 "id": "c6666599-5e18-46ff-9f94-7d64d8c2d613",
@@ -44,6 +52,14 @@
                 "id": "681c26de-569a-451a-aa79-3c4b921931cf",
                 "resourcePath": "objects\\oGhost\\oGhost.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1f1cec46-6b0a-4c77-850e-848055d97273",
+            "Value": {
+                "id": "fb9c8554-f21c-4b45-b4e1-fe82048854c0",
+                "resourcePath": "sprites\\sGhostFrightened\\sGhostFrightened.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -127,6 +143,14 @@
             }
         },
         {
+            "Key": "4fb6718c-1198-4ed5-90e1-da6db73c300a",
+            "Value": {
+                "id": "2859ffd3-fe5d-4891-8322-c92f3c27aaea",
+                "resourcePath": "sprites\\sShadowDown\\sShadowDown.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "538b5a3c-c4aa-4199-90df-73d79c4baa4e",
             "Value": {
                 "id": "79ba06b3-d8cb-4576-90e8-f80ab1aa1d54",
@@ -143,11 +167,35 @@
             }
         },
         {
+            "Key": "59d82307-6112-4344-ba81-f0d470e124ef",
+            "Value": {
+                "id": "9579979b-c4a6-4075-a13b-896bf5de6c4c",
+                "resourcePath": "objects\\oBashful\\oBashful.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5a144a31-416d-474e-a89a-9e3fa87a9c7a",
             "Value": {
                 "id": "f71d130a-fecf-4a15-84c6-834335229709",
                 "resourcePath": "objects\\oShadow\\oShadow.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5cba15b5-917c-4906-bd3f-4a52c7f48b45",
+            "Value": {
+                "id": "5dca7af2-4216-4aa3-bbee-21674667c96d",
+                "resourcePath": "sprites\\sShadowRight\\sShadowRight.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5df10290-4236-4230-b76d-64fcde19696a",
+            "Value": {
+                "id": "c2d8a1a8-8b8b-4a55-8712-02501fdc9b27",
+                "resourcePath": "sprites\\sShadowUp\\sShadowUp.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -324,6 +372,22 @@
                 "id": "3d60d84c-e10b-4364-862b-cd51216190de",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "ce84859c-4c9a-4e15-b7db-dd93517af259",
+            "Value": {
+                "id": "ebe5c49e-3d5f-409c-9e35-bd43b02f959b",
+                "resourcePath": "sprites\\sShadowLeft\\sShadowLeft.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d18d82a8-8f18-4a1f-91b6-875e3c2a761d",
+            "Value": {
+                "id": "01c8a867-772b-4c60-b1c2-b92c15b72aeb",
+                "resourcePath": "sprites\\sBashful\\sBashful.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
