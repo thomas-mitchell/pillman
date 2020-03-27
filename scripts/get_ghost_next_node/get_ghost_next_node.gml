@@ -15,14 +15,14 @@ if (currentNode.gridX != 0) {
 	leftNode = map[currentNode.gridX - 1, currentNode.gridY];
 }
 var rightNode = noone;
-if (currentNode.gridX != 21) {
+if (currentNode.gridX != oGame.mapWidth - 1) {
 	rightNode = map[currentNode.gridX + 1, currentNode.gridY];
 }
 // TODO - left and right node can only be noone if we're in the tunnel
 
 // TODO - Update dir
 
-if (ghost.dir != "down" && upNode.passable) {
+if (ghost.dir != "down" && (upNode.passable || upNode == oGame.cageEntrance)) {
 	ds_list_add(nodeList, upNode);	
 }
 if (ghost.dir != "up" && downNode.passable) {

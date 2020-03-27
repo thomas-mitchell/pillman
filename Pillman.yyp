@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "9a203c46-3805-45e1-bbc6-4682cc95a334",
+            "Value": {
+                "id": "6ca4e3ac-325e-46f8-a1ad-5ca051020186",
+                "resourcePath": "objects\\oSpeedy\\oSpeedy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9edec74f-ed94-456b-834e-fb35854b5da7",
             "Value": {
                 "id": "377fe932-79ca-4b52-9f99-77d83e0a8ffd",
@@ -252,6 +260,14 @@
                 "id": "d9050d05-8602-4fcf-abec-e6ed68ce34d8",
                 "resourcePath": "views\\b0472f16-892e-4927-96c6-4927f0ea6dbb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b1194716-c3c1-4c04-84f6-0f388cab9b09",
+            "Value": {
+                "id": "a778b2ee-03c0-4773-b97b-98cebcdf37a7",
+                "resourcePath": "sprites\\sSpeedy\\sSpeedy.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

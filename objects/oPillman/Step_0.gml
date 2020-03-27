@@ -58,39 +58,35 @@ if(nextTurn != noone) {
 // Move and set the sprite direction
 var collision = noone;
 var newX = x, newY = y;
-var x1 = x, x2 = x + 7, y1 = y, y2 = y + 7;
+var x1 = x, y1 = y;
 	
 switch(dir) {
 	case "up":
 		newY -= velocity;
 		y1 -= 1;
-		y2 -= 1;
 		direction = 90;
 		break;
 			
 	case "down":
 		newY += velocity;
 		y1 += 1;
-		y2 += 1;
 		direction = 270;
 		break;
 			
 	case "left":
 		newX -= velocity;
 		x1 -= 1;
-		x2 -= 1;
 		direction = 180;
 		break;
 			
 	case "right":
 		newX += velocity;
 		x1 += 1;
-		x2 += 1;
 		direction = 0;
 		break;
 }
 	
-collision = collision_rectangle(x1, y1, x2, y2, oWall, false, false);
+collision = collision_rectangle(x1, y1, x1 + 7, y1 + 7, oWall, false, false);
 if(collision == noone) {
 	x = newX;
 	y = newY;
@@ -98,7 +94,7 @@ if(collision == noone) {
 
 // Check for collision with pill
 var x1 = x, x2 = x + 7, y1 = y, y2 = y + 7;
-collision = collision_rectangle(x1, y1, x2, y2, oPill, false, false);
+collision = collision_rectangle(x1, y1, x1 + 7, y1 + 7, oPill, false, false);
 if(collision != noone) {
 	with(collision) {
 		instance_destroy();	
@@ -106,11 +102,11 @@ if(collision != noone) {
 }
 
 // Check for going off screen
-if(x < -7) {
+if(x < 0) {
 	x = room_width - 1;	
 }
 if(x >= room_width) {
-	x = -7;	
+	x = 0;	
 }
 
 

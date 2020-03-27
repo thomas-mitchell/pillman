@@ -68,8 +68,10 @@ for(xx = 0; xx < mapWidth; xx++) {
 	}
 }
 
-
-
+// Special nodes
+cageEntrance = map[10, 11];
+tunnelEndLeft = map[0, 13];
+tunnelEndRight = map[mapWidth - 1, 13];
 
  
 
