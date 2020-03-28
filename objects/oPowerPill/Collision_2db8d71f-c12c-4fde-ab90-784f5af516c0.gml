@@ -22,10 +22,13 @@ with (oGhost) {
 		}
 		
 		// Turn around
-		path_clear_points(path);
-		path_add_point(path, x, y, 100);
-		path_add_point(path, lastNode.x, lastNode.y, 100);
-		path_start(path, velocity, path_action_stop, true);
+		if(x != lastNode.x || y != lastNode.y) {
+			path_clear_points(path);
+			path_add_point(path, x, y, 100);
+			path_add_point(path, lastNode.x, lastNode.y, 100);
+			path_start(path, velocity, path_action_stop, true);
+		}
+		
 	}
 }
 

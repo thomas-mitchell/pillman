@@ -4,5 +4,5 @@
 velocity = 1;
 //speed = 0.25;
 
-dir = "left";
+dir = noone;
 nextTurn = noone;
