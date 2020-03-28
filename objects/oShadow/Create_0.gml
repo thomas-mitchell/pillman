@@ -6,9 +6,8 @@ event_inherited();
 name = "shadow";
 dir = "left";
 
-scatterNode = map[oGame.mapWidth - 2, 0];
-
-alarm[0] = 5;
+scatterNodeGridX = 19;
+scatterNodeGridY = 0;
 
 spriteMap = ds_map_create();
 ds_map_add(spriteMap, "up", sShadowUp);

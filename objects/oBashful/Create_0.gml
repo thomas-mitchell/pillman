@@ -6,9 +6,8 @@ event_inherited();
 name = "bashful";
 dir = "right";
 
-scatterNode = map[oGame.mapWidth - 2, 26];
-
-alarm[0] = 5;
+scatterNodeGridX = 19;
+scatterNodeGridY = 26;
 
 spriteMap = ds_map_create();
 ds_map_add(spriteMap, "up", sBashfulUp);

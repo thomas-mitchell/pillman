@@ -37,6 +37,9 @@ else if(currentNode.gridY < nextNode.gridY) {
 if (spriteMap && state != "frightened") {
 	sprite_index = ds_map_find_value(spriteMap, dir);	
 }
+//if (!spriteMap) {
+//	color = c_red;	
+//}
 
 path_clear_points(path);
 path_add_point(path, x, y, 100);

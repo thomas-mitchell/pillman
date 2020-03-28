@@ -6,9 +6,8 @@ event_inherited();
 name = "speedy";
 dir = "up";
 
-scatterNode = map[1, 0];
-
-alarm[0] = 5;
+scatterNodeGridX = 1;
+scatterNodeGridY = 0;
 
 spriteMap = ds_map_create();
 ds_map_add(spriteMap, "up", sSpeedyUp);

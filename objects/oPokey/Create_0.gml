@@ -6,9 +6,8 @@ event_inherited();
 name = "pokey";
 dir = "left";
 
-scatterNode = map[1, 26];
-
-alarm[0] = 5;
+scatterNodeGridX = 1;
+scatterNodeGridY = 26;
 
 spriteMap = ds_map_create();
 ds_map_add(spriteMap, "up", sPokeyUp);

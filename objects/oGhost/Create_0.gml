@@ -20,3 +20,5 @@ path = path_add();
 path_set_closed(path, false);
 path_set_kind(path, 0);
 
+alarm[0] = 15;
+
