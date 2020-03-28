@@ -65,24 +65,28 @@ switch(dir) {
 		newY -= velocity;
 		y1 -= 1;
 		direction = 90;
+		sprite_index = sPillmanUp;
 		break;
 			
 	case "down":
 		newY += velocity;
 		y1 += 1;
 		direction = 270;
+		sprite_index = sPillmanDown;
 		break;
 			
 	case "left":
 		newX -= velocity;
 		x1 -= 1;
 		direction = 180;
+		sprite_index = sPillmanLeft;
 		break;
 			
 	case "right":
 		newX += velocity;
 		x1 += 1;
 		direction = 0;
+		sprite_index = sPillmanRight;
 		break;
 }
 	

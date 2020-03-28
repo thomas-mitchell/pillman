@@ -18,8 +18,8 @@ var rightNode = noone;
 if (currentNode.gridX != oGame.mapWidth - 1) {
 	rightNode = map[currentNode.gridX + 1, currentNode.gridY];
 }
-// TODO - left and right node can only be noone if we're in the tunnel
 
+// If it's possible to move to a node add it to the list
 if (ghost.dir != "down" && (upNode.passable || upNode == oGame.cageEntrance)) {
 	ds_list_add(nodeList, upNode);	
 }
@@ -33,13 +33,14 @@ if (ghost.dir != "right" && leftNode != noone && leftNode.passable) {
 	ds_list_add(nodeList, leftNode);
 }
 
-
+// If only one node is enterable then return it
 if (ds_list_size(nodeList) == 1) {
 	var nextNode = ds_list_find_value(nodeList, 0);
 	ds_list_destroy(nodeList);
 	return nextNode;
 }
 
+// Sort the nodes by distance to target and pick the closest
 var listLength = ds_list_size(nodeList);
 var priorityList = ds_priority_create();
 for(var index = 0; index < listLength; index++) {
@@ -52,6 +53,7 @@ for(var index = 0; index < listLength; index++) {
 
 var nextNode = ds_priority_find_min(priorityList);
 
+// Cleanup data structures
 ds_priority_destroy(priorityList);
 ds_list_destroy(nodeList);
 

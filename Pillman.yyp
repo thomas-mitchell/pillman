@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "2505f524-7b41-4d82-b7d1-5d89ebeb4683",
+            "Value": {
+                "id": "a77711ed-4214-456f-95ed-8255abd4cea8",
+                "resourcePath": "views\\2505f524-7b41-4d82-b7d1-5d89ebeb4683.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "276660aa-f2ff-4b09-a703-d91632203b5b",
             "Value": {
                 "id": "ee99bd07-f3ec-4e71-a6a9-43198b3f2bdf",
@@ -116,6 +124,14 @@
                 "id": "7f7ccab6-2e02-4fd3-bf3c-862141d0d48c",
                 "resourcePath": "objects\\oCageEntrance\\oCageEntrance.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "34a769bf-65f3-479e-872d-2c780411fb7a",
+            "Value": {
+                "id": "a8d0ebca-6835-4815-af46-369ec1b15643",
+                "resourcePath": "sprites\\sPillmanRight\\sPillmanRight.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -204,6 +220,14 @@
                 "id": "dc3a54e5-9fb7-492f-aaf7-ac017d8615a7",
                 "resourcePath": "scripts\\clear_nodes\\clear_nodes.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "55ffcd3d-77fc-4058-b3b2-e955646196bf",
+            "Value": {
+                "id": "512e5227-fd98-4df2-a7ed-7555e5d877df",
+                "resourcePath": "sprites\\sPillmanDown\\sPillmanDown.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -463,6 +487,14 @@
             }
         },
         {
+            "Key": "c84d6b6b-8b6f-4de7-899f-8f0686cbc60d",
+            "Value": {
+                "id": "52b07e71-13f8-47f7-affa-445dcc3039e2",
+                "resourcePath": "sprites\\sPillmanUp\\sPillmanUp.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cc7f51d3-4c9a-4b28-a22d-fc6cb443a59d",
             "Value": {
                 "id": "18f5ddcb-9095-4725-8bf7-a51db98ae398",
@@ -491,6 +523,14 @@
             "Value": {
                 "id": "01c8a867-772b-4c60-b1c2-b92c15b72aeb",
                 "resourcePath": "sprites\\sBashful\\sBashful.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d34fe592-42f7-497e-b32f-07d5b7c23358",
+            "Value": {
+                "id": "86b45702-e9d2-4bca-aa42-d985a9b42b83",
+                "resourcePath": "sprites\\sPillmanLeft\\sPillmanLeft.yy",
                 "resourceType": "GMSprite"
             }
         },
