@@ -407,6 +407,14 @@
             }
         },
         {
+            "Key": "9f99d2c3-3e98-4786-aaa5-e0b1669e97c1",
+            "Value": {
+                "id": "998bc9ea-9d9a-451d-8aa4-5e7a0e8cfeef",
+                "resourcePath": "sprites\\sPillmanDeath\\sPillmanDeath.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a5273a11-5d7d-4495-8855-e5519b3fbe04",
             "Value": {
                 "id": "119e2df4-7edd-46db-88b4-a3619c3fbe66",

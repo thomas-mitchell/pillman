@@ -8,7 +8,8 @@
         "55ffcd3d-77fc-4058-b3b2-e955646196bf",
         "d34fe592-42f7-497e-b32f-07d5b7c23358",
         "34a769bf-65f3-479e-872d-2c780411fb7a",
-        "1811e350-553a-4bfe-a328-b6d00ccee25d"
+        "1811e350-553a-4bfe-a328-b6d00ccee25d",
+        "9f99d2c3-3e98-4786-aaa5-e0b1669e97c1"
     ],
     "filterType": "GMSprite",
     "folderName": "Pillman",

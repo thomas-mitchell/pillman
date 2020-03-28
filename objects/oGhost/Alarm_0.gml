@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Startup after nodes initialised
 // You can write your code in this editor
 startNode = get_actor_node(self);
 scatterNode = map[scatterNodeGridX, scatterNodeGridY];

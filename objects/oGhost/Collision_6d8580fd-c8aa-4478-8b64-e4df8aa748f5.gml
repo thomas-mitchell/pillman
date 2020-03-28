@@ -14,16 +14,8 @@ if (state == "frightened") {
 	sprite_index = sEyesRight;
 }
 else if (state == "chase" || state == "scatter") {
-	var pillmanStartNode = map[10, 20];
 	oPillman.dir = noone;
-	oPillman.x = pillmanStartNode.x;
-	oPillman.y = pillmanStartNode.y;
-	
-	with (oGhost) {
-		x = startNode.x;
-		y = startNode.y;
-		path_clear_points(path);
-		alarm[0] = 15;
-		state = "scatter";
-	}
+	oPillman.sprite_index = sPillmanDeath;
+	oPillman.image_index = 0;
+	alarm[1] = 40;
 }
