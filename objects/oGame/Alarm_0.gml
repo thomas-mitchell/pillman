@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Chae/scatter alarm
 // You can write your code in this editor
 
 if (ghostState == "scatter") {

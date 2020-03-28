@@ -6,7 +6,7 @@ event_inherited();
 name = "bashful";
 dir = "right";
 
-scatterNode = map[oGame.mapWidth - 1, oGame.mapHeight - 1];
+scatterNode = map[oGame.mapWidth - 2, 26];
 
 alarm[0] = 5;
 

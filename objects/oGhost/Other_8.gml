@@ -33,10 +33,7 @@ else if(currentNode.gridY < nextNode.gridY) {
 	dir = "down";	
 }
 
-if (name == "bashful") {
-	var dummy = 3;	
-}
-
+// Update sprite facing
 if (spriteMap && state != "frightened") {
 	sprite_index = ds_map_find_value(spriteMap, dir);	
 }

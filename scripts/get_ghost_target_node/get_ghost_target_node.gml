@@ -88,6 +88,7 @@ if (ghost.state == "chase") {
 		var targetPositionY = intermediateNode.y + 4 + lengthdir_y(addDistance, addDirection);
 		targetPositionY = clamp(targetPositionY, 0, room_height - 1);
 		
-		return collision_point(targetPositionX, targetPositionY, oNode, true, true);
+		var targetNode = collision_point(targetPositionX, targetPositionY, oNode, true, true);
+		return targetNode;
 	} // End bashful
 }

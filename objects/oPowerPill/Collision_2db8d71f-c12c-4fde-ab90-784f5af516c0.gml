@@ -26,10 +26,11 @@ with (oGhost) {
 		path_add_point(path, x, y, 100);
 		path_add_point(path, lastNode.x, lastNode.y, 100);
 		path_start(path, velocity, path_action_stop, true);
-		
-		// Turn off alarm
-		alarm[0] = -1;
 	}
 }
+
+// Turn off chase/scatter alarm
+oGame.alarm[0] = -1;
+oGame.alarm[1] = 7 * 60;
 
 instance_destroy();
