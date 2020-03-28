@@ -13,6 +13,8 @@ scatterNode = noone;
 nextNode = noone;
 spriteMap = noone;
 
+lastNode = noone;
+
 //path = ds_list_create();
 path = path_add();
 path_set_closed(path, false);

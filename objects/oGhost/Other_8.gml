@@ -2,6 +2,7 @@
 // You can write your code in this editor
 
 var currentNode = get_actor_node(self);
+lastNode = currentNode;
 
 // If the ghost is about to go through the tunnel then update position
 // before trying to calculate next node
@@ -36,7 +37,7 @@ if (name == "bashful") {
 	var dummy = 3;	
 }
 
-if (spriteMap) {
+if (spriteMap && state != "frightened") {
 	sprite_index = ds_map_find_value(spriteMap, dir);	
 }
 

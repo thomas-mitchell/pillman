@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "47bb6cd2-5e29-4ffd-8e42-13d815277d72",
+            "Value": {
+                "id": "6ad7a890-898a-4bd2-99fa-e990e8f98fca",
+                "resourcePath": "sprites\\sPowerPill\\sPowerPill.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "49c905a7-f3e9-4962-84e7-358b14846ae9",
             "Value": {
                 "id": "41d9a70b-147f-4d3c-8c39-18bf530127c8",
@@ -396,6 +404,14 @@
                 "id": "119e2df4-7edd-46db-88b4-a3619c3fbe66",
                 "resourcePath": "views\\a5273a11-5d7d-4495-8855-e5519b3fbe04.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a85d0acc-3eb0-40b2-8eae-eda561a5dc49",
+            "Value": {
+                "id": "4f5399ce-8110-443c-a938-d4930bdba884",
+                "resourcePath": "objects\\oPowerPill\\oPowerPill.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -40,6 +40,14 @@ if (ds_list_size(nodeList) == 1) {
 	return nextNode;
 }
 
+// If the ghost is frightened then choose a random node
+if (ghost.state == "frightened") {
+	ds_list_shuffle(nodeList);
+	var nextNode = ds_list_find_value(nodeList, 0);
+	ds_list_destroy(nodeList);
+	return nextNode;
+}
+
 // Sort the nodes by distance to target and pick the closest
 var listLength = ds_list_size(nodeList);
 var priorityList = ds_priority_create();
