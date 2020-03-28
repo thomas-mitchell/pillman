@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (state == "dead") {
+	state = oGame.ghostState;	
+}
+
 var currentNode = get_actor_node(self);
 lastNode = currentNode;
 

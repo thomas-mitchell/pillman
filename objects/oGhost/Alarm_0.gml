@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+startNode = get_actor_node(self);
 scatterNode = map[scatterNodeGridX, scatterNodeGridY];
 
 nextNode = get_ghost_next_node(self);

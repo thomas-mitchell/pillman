@@ -90,20 +90,13 @@ switch(dir) {
 		break;
 }
 	
+// Check for collision with wall
 collision = collision_rectangle(x1, y1, x1 + 7, y1 + 7, oWall, false, false);
 if(collision == noone) {
 	x = newX;
 	y = newY;
 }
 
-// Check for collision with pill
-var x1 = x, x2 = x + 7, y1 = y, y2 = y + 7;
-collision = collision_rectangle(x1, y1, x1 + 7, y1 + 7, oPill, false, false);
-if(collision != noone) {
-	with(collision) {
-		instance_destroy();	
-	}
-}
 
 // Check for going off screen
 if(x < 0) {

@@ -3,19 +3,19 @@
 
 
 
-velocity = 1;
+velocity = 0.8;
 dir = "up";
 name = "";
 
 color = c_white;
 state = "scatter";
+startNode = noone;
 scatterNode = noone;
 nextNode = noone;
-spriteMap = noone;
-
 lastNode = noone;
 
-//path = ds_list_create();
+spriteMap = noone;
+
 path = path_add();
 path_set_closed(path, false);
 path_set_kind(path, 0);
